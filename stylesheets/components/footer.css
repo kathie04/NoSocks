@@ -1,0 +1,80 @@
+.layout-prefooter {
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.right-prefooter {
+	display: flex;
+}
+
+.right-prefooter a {
+	display: block;
+	font-weight: bold;
+}
+
+.right-prefooter > *:not(:last-child) {
+	margin-right: 60px;
+}
+
+.form-prefooter {
+	display: flex;
+	align-items: center;
+}
+
+.form-prefooter label {
+	margin-right: 60px;
+	font-weight: bold;
+}
+
+.form-prefooter {
+	position: relative;
+}
+
+.form-prefooter button {
+	position: absolute;
+	right: 0;
+	bottom: -12px;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+.socials {
+	display: flex;
+}
+
+.socials > *:not(:last-child) {
+	margin-right: 30px;
+}
+
+.socials a:hover svg{
+	color: var(--global-link-hover-color);
+}
+.bottom-footer {
+	color: #c7c7c7;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+	.socials > *:not(:last-child) {
+	margin-right: 10px;
+}
+	.right-prefooter {
+		flex-direction: column;
+	}
+
+
+@media screen and (max-width: 768px) {
+	.layout-prefooter {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.layout-prefooter .layout-item:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}

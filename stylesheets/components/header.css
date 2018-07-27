@@ -1,0 +1,19 @@
+.header {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.layout-header {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: inline-block;
+	padding: 20px;
+	margin-right: -45px;
+}
+
+.logo:hover {
+	color: #000;
+}

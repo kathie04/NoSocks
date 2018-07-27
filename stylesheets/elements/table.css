@@ -1,0 +1,17 @@
+table tr:last-child td {
+	border-top-color: #b2b2b2;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+table {
+	margin-bottom: 80px;
+}
+
+table p {
+	font-size: 1.34rem;
+}
+
+.total {
+	text-align: center;
+}

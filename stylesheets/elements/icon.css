@@ -1,0 +1,66 @@
+[class^="icon-"],
+[class*=" icon-"] {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+svg[class^="icon-"],
+svg[class*=" icon-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+svg[class^="icon-"],
+svg[class*=" icon-"] {
+  font-size: 30px;
+}
+
+svg[class*=" icon-"].icon-logo {
+  font-size: 70px;
+  width: auto;
+  margin-left: -45px;
+}
+
+svg[class*="icon-"].icon-search {
+  font-size: 28px;
+  margin-bottom: -7px;
+}
+
+svg[class*="icon-"].icon-wishlist {
+  margin-bottom: -7px;
+}
+
+svg[class*="icon-"].icon-card {
+  font-size: 35px;
+}
+
+svg[class*="icon-"].icon-arrow-right {
+  font-size: 20px;
+}
+
+svg[class*="icon-"].icon-square {
+    font-size: 135px;
+}
+
+svg[class*="icon-"].icon-triange {
+  font-size: 90px;
+}
+
+svg[class*="icon-"].icon-circle {
+  font-size: 80px;
+}

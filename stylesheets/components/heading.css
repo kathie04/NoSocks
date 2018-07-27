@@ -1,0 +1,10 @@
+.heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 70px;
+}
+
+.heading svg {
+	margin-right: 40px;
+}

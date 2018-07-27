@@ -1,0 +1,10 @@
+.section-cart .checkout {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.section-cart {
+	padding-top: 60px;
+	margin-bottom: 176px;
+}
+

@@ -1,0 +1,124 @@
+.section-lookbook {
+	padding-top: 170px;
+	padding-bottom: 150px;
+}
+
+.fall {
+	width: 490px;
+	min-height: 713px;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	background-position: 50% 0;
+}
+
+.fall h2 {
+	margin-left: -58.4%;
+}
+.section-fall {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.section-fall svg {
+	position: absolute;
+	top: 200px;
+	left: 8.34%;
+
+}
+
+.section-spring {
+	margin-top: -130px;
+	position: relative;
+}
+
+.section-spring svg {
+	position: absolute;
+	top: 400px;
+	right: 8.34%;
+}
+
+.spring {
+	width: 750px;
+	height: 792px;
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0 100%, 100% 0;
+	justify-content: flex-end;
+
+}
+
+.spring h2 {
+		margin-right: -27.75%;
+}
+
+.section-winter {
+	margin-top: -15px;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 16.67%
+}
+
+.section-winter svg {
+	position: absolute;
+	bottom: 205px;
+	left: 25%;
+}
+
+.winter {
+	width: 490px;
+	height: 656px;
+	display: flex;
+	align-items: center;
+	background-position: 50% 0;
+}
+
+.winter h2 {
+	margin-left: -27.75%;
+}
+
+@media screen and (max-width: 1023px) {
+	.section-fall, .section-winter, .section-spring {
+		justify-content: center;
+		margin-top: 100px;
+		padding-right: 0;
+	}
+
+	.spring, .winter, .fall {
+		align-items: flex-start;
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.spring h2, .winter h2, .fall h2 {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: -60px;
+	}
+
+	svg[class*="icon-"].icon-square,
+	svg[class*="icon-"].icon-triange, 
+	svg[class*="icon-"].icon-circle{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.spring {
+		height: 1200px;
+	   	background-position: 50% 0, 50% 620px;
+	   	width: 450px;
+	}
+
+
+}
+
+@media screen and (max-width: 500px) {
+	.spring, .fall, .winter {
+		width: 100%;
+	}
+}

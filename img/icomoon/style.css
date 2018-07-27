@@ -1,0 +1,48 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-twitter {
+  width: 0.9287109375em;
+}
+
+.icon-facebook {
+  width: 0.587890625em;
+}
+
+.icon-logo {
+  width: 2.94140625em;
+}
+
+.icon-card {
+  width: 1.1171875em;
+}
+
+.icon-circle {
+  width: 1.2197265625em;
+}
+
+.icon-square {
+  width: 0.9853515625em;
+}
+
+.icon-triange {
+  width: 0.98046875em;
+}
+
+.icon-wishlist {
+  width: 1.240234375em;
+}
