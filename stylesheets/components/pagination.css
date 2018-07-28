@@ -1,0 +1,11 @@
+.pagination {
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	margin-right: 15%;
+}
+
+.pagination li {
+	margin-right: 25px;
+	font-size: 1.34rem;
+}

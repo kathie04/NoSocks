@@ -1,0 +1,67 @@
+.grid-checkout {
+	margin-right: -50px;
+	margin-left: -50px;
+	margin-top: 60px;
+	margin-bottom: 170px;
+	flex-wrap: wrap;
+}
+
+.grid-checkout .grid-item{
+	width: calc(100%/3);
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+}
+
+.grid-checkout .grid-item h3 {
+	margin-bottom: 80px;
+}
+
+.grid-checkout .grid-item input {
+	margin-bottom: 60px;
+}
+
+.form-code, .form-date {
+	display: flex;
+	align-items: center;
+}
+
+.form-code input, .form-date input {
+	width: 23%;
+	border: 1px solid var(--global-color);
+}
+
+.form-code label {
+	margin-right: 77px;
+	margin-bottom: 60px;
+}
+
+.form-date label {
+	margin-right: 48px;
+	margin-bottom: 60px;
+}
+
+input.month {
+	margin-right: 20px;
+}
+
+.form-date span {
+	margin-bottom: 60px;
+	font-size: 2rem;
+	margin-right: 20px;
+}
+
+input.code {
+	border: 1px solid var(--global-color);
+}
+
+@media screen and (max-width: 900px) {
+	.grid-checkout .grid-item {
+		width: 100%;
+	}
+
+	.grid-checkout {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}

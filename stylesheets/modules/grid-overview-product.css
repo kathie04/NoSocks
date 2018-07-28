@@ -1,0 +1,32 @@
+.grid-overview-product {
+	flex-wrap: wrap;
+	margin-top: 90px;
+	margin-bottom: 140px;
+	margin-right: -50px;
+	margin-left: -50px
+}
+
+.grid-overview-product .grid-item {
+	width: calc(100%/3);
+	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+@media screen and (max-width: 500px) {
+	.grid-overview-product .grid-item {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.grid-overview-product .grid-item {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.grid-overview-product {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}

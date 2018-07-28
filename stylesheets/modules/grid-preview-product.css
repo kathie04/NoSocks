@@ -1,0 +1,9 @@
+.grid-card-preview-product .grid-item:first-child {
+	width: 50%;
+	margin-right: 15%;
+	margin-left: 20px;
+}
+
+.grid-card-preview-product .grid-item:last-child {
+	width: 50%;
+}

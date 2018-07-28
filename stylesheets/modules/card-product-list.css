@@ -1,0 +1,44 @@
+.card-overview-product.small {
+	padding-top: 0;
+}
+
+.card-overview-product.small a {
+	left: 85%;
+	top: 40%;
+}
+
+.card-overview-product.small a:first-child {
+	top: 68%;
+}
+
+.card-overview-product.small .card-price {
+	bottom: 55px;
+	font-size: 1.1rem;
+}
+
+.card-overview-product.small .card-brand {
+	position: absolute;
+	font-size: 1.1rem;
+	margin-top: 0;
+	top: 0;
+	left: 15px;
+}
+
+.card-overview-product.small .card-title {
+	position: absolute;
+	margin-bottom: 0;
+	font-size: 0.74rem;
+	bottom: 0;
+	left: 15px;
+}
+
+.card-overview-product.small:not(:hover) .card-title,
+.card-overview-product.small:not(:hover) .card-brand,
+.card-overview-product.small:not(:hover) a {
+	display: none;
+}
+
+.card-overview-product.small:hover {
+	border-bottom: 1px solid transparent;
+	border-right: 1px solid transparent;
+}

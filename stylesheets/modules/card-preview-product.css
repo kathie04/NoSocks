@@ -1,0 +1,91 @@
+.grid-card-preview-product .grid-item {
+	width: 50%;
+
+}
+
+.grid-card-preview-product .grid-item:first-child {
+	margin-right: 15%;
+	margin-left: 20px;
+}
+
+.card-preview-product .card-price{
+	font-size: 1.34rem;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.card-preview-product .card-color {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card-preview-product .card-color p {
+	margin-right: 60px;
+	margin-bottom: 0;
+}
+
+.card-preview-product .color-list {
+	display: flex;
+}
+
+.card-preview-product .color {
+	width: 45px;
+	height: 45px;
+	border: 1px solid transparent;
+}
+
+.card-preview-product .color.is-active {
+	border-color: #000;
+}
+
+.yellow {
+	background-color: #f2f1bb;
+}
+
+.rose {
+	background-color: #f2cbcd;
+}
+
+.blue {
+	background-color: #d2ebef;
+}
+
+.card-preview-product .card-value {
+	display: flex;
+	margin-top: 35px;
+	align-items: center;
+	margin-bottom: 90px;
+	flex-wrap: wrap;
+}
+
+.card-preview-product .card-value p {
+	margin-right: 30px;
+}
+
+.card-preview-product .card-buttons {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card-preview-product .card-buttons .button:first-child {
+	margin-right: 30px;
+
+}
+
+.card-preview-product .card-buttons .button {
+		margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	.grid-card-preview-product .grid-item {
+	width: 100%;
+}
+	.grid-card-preview-product {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

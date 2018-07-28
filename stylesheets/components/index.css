@@ -2,3 +2,10 @@
 @import 'navbar.css';
 @import 'footer.css';
 @import 'heading.css';
+@import 'breadcrumbs.css';
+@import 'sidebar.css';
+@import 'section-store.css';
+@import 'card.css';
+@import 'pagination.css';
+@import 'slider.css';
+@import 'section-checkout.css'
