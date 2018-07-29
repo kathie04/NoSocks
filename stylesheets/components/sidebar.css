@@ -1,36 +1,24 @@
 .sidebar {
-	margin-top: 110px;
-}
-
-.sidebar ul {
-	list-style: none;
-}
+  margin-top: 110px; }
+  .sidebar ul {
+    list-style: none; }
 
 .gender > li {
-	margin-bottom: 50px;
-	font-weight: bold;
-}
-
-.socks-height li {
-	font-weight: normal;
-}
+  margin-bottom: 50px;
+  font-weight: bold; }
 
 .socks-height {
-	margin-top: 10px;
-	display: none;
-}
+  margin-top: 10px;
+  display: none; }
+  .socks-height li {
+    font-weight: normal; }
+  .socks-height.is-active {
+    display: block; }
 
 .sidebar a.is-active {
-	text-decoration: underline;
-	color: #000;
-}
-
-.socks-height.is-active {
-	display: block;
-}
+  text-decoration: underline;
+  color: #000; }
 
 @media screen and (max-width: 768px) {
-	.sidebar {
-		display: none;
-	}
-}
+  .sidebar {
+    display: none; } }

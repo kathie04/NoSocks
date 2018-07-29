@@ -161,19 +161,19 @@
         		  		<p class="card-content">Patterned with a burst of cascading stars and bright crabs, this pair of ankle socks is a perfect antidote to the winter blues (or a great way to give yourself a boost if you're feeling, you know… crabby).</p>
         		  		<div class="card-color">
         		  			<p>Colour</p>
-        		  			<div class="color-list">
-        		  				<div class="color yellow is-active"></div>
-        		  				<div class="color rose"></div>
-        		  				<div class="color blue"></div>
-        		  			</div>
+                    <div class="color-list">  
+                        <input type="radio" name="yellow" class="color yellow">
+                        <input type="radio" name="yellow" class="color rose">
+                        <input type="radio" name="yellow" class="color blue">
+                    </div>
         		  		</div>
         		  		<div class="card-value">
         		  			<p>Qantity</p>
-        		  			<div class="card-product-value">
-        		  				<button class="value-nav">-</button>
-           						<input type="text" name="" value="1" class="cart-value">
-            					<button class="value-nav">+</button>
-        		  			</div>
+                    <div class="quantity">
+                      <button class="minus-btn" type="button" name="button">-</button>
+                      <input type="text" name="name" value="1">
+                      <button class="plus-btn" type="button" name="button">+</button>
+                    </div>
         		  		</div>
         		  		<div class="card-buttons">
         		  			<button class="button">Add to cart</button>
@@ -284,7 +284,7 @@
       </div>  
     </div> 
     <div class="bottom-footer"> 
-      <p>Copyright  c  2015 Nosockstore All Rights Reserved </p>
+      <p>Copyright  &copy;  2015 Nosockstore All Rights Reserved </p>
     </div>  
     </div>
   </footer>
@@ -299,12 +299,45 @@
 	});
     </script>
 
-    <script>
-		$(".gender li a").click(function(e) {
-  		e.preventDefault();
-  		$(".socks-height").toggleClass('is-active');
-		})
-	</script>
+  <script>
+    $(".gender li a").click(function(e) {
+      e.preventDefault();
+      $(".socks-height").toggleClass('is-active');
+    })
+  </script>
+
+  <script type="text/javascript">
+    $('.minus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+ 
+    if (value > 1) {
+        value = value - 1;
+    } else {
+        value = 0;
+    }
+ 
+  $input.val(value);
+ 
+});
+ 
+$('.plus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+ 
+    if (value < 100) {
+        value = value + 1;
+    } else {
+        value =100;
+    }
+ 
+    $input.val(value);
+});
+  </script>
 
 </body>
 

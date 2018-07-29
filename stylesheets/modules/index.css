@@ -1,7 +1,7 @@
-@import 'card-product.css';
-@import 'card-overview-product.css';
-@import 'grid-overview-product.css';
 @import 'preview-product.css';
 @import 'card-preview-product.css';
+@import 'grid-preview-product.css';
+@import 'card-overview-product.css';
 @import 'card-product-list.css';
 @import 'grid-overview-product-list.css';
+@import 'grid-overview-product.css'

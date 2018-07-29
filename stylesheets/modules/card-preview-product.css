@@ -31,26 +31,29 @@
 	display: flex;
 }
 
-.card-preview-product .color {
+
+input[type="radio"].color {
+	border-radius: 0;
 	width: 45px;
 	height: 45px;
 	border: 1px solid transparent;
 }
 
-.card-preview-product .color.is-active {
-	border-color: #000;
+input[type="radio"].yellow {
+	background-color: #f2f1bb !important;
 }
 
-.yellow {
-	background-color: #f2f1bb;
+input[type="radio"].rose {
+	background-color: #f2cbcd !important;
 }
 
-.rose {
-	background-color: #f2cbcd;
+input[type="radio"].blue {
+	background-color: #d2ebef !important;
 }
 
-.blue {
-	background-color: #d2ebef;
+input[type="radio"]:checked {
+		border-color: #000;
+		background-image: none;
 }
 
 .card-preview-product .card-value {
@@ -62,7 +65,39 @@
 }
 
 .card-preview-product .card-value p {
-	margin-right: 30px;
+	margin-right: 55px;
+}
+
+
+.quantity {
+	display: flex;
+}
+.quantity input {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  width: 35px;
+  font-size: 1.34rem;
+  font-weight: bold;
+  padding: 0;
+  min-height: 35px;
+}
+ 
+.minus-btn, .plus-btn {
+  width: 35px;
+  min-height: 35px;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 1.34rem;
+  font-weight: bold;
+  padding: 0;
+  color: #000;
+}
+.minus-btn:focus,  
+.plus-btn:focus,
+.quantity input:focus {
+  outline:0;
 }
 
 .card-preview-product .card-buttons {
@@ -89,3 +124,5 @@
 		justify-content: center;
 	}
 }
+
+

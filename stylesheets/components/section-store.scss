@@ -1,0 +1,20 @@
+.section-store {
+	padding-top: 60px;
+	margin-bottom: 170px;
+}
+
+.layout-store .layout-item:first-child {
+	width: calc(100%/4);
+
+	@media screen and (max-width: 768px) {
+		width: 0;
+	}
+}
+
+.layout-store .layout-item:last-child {
+	width: calc((100% / 4) * 3);
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+}

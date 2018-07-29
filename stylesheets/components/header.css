@@ -1,19 +1,18 @@
 .header {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .layout-header {
-	justify-content: space-between;
-	align-items: center;
-}
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .logo {
-	display: inline-block;
-	padding: 20px;
-	margin-right: -45px;
-}
-
-.logo:hover {
-	color: #000;
-}
+  display: inline-block;
+  padding: 20px;
+  margin-right: -45px; }
+  .logo:hover {
+    color: #000; }

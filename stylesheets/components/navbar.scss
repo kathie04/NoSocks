@@ -1,0 +1,36 @@
+.navbar {
+	display: flex;
+	list-style: none;
+	margin-bottom: 0;
+
+	li:not(:last-child) {
+		margin-right: 45px;
+	}
+
+	li {
+
+		a {
+			font-weight: bold;
+			font-size: 1.34rem;
+		}
+	}
+
+	a {
+		display: inline-block;
+		padding: 10px;
+	}	
+}
+
+.navbar-mobile li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.navbar-mobile a:hover svg[class*=" icon-"] {
+	color: var(--global-link-hover-color);
+}
+
+.navbar-nav {
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+}

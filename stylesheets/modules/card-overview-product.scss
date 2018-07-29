@@ -1,0 +1,68 @@
+.card-overview-product {
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	transition: border 1s ease 0.1s;
+	transition: box-shadow 1s ease 0.1s;
+	height: 390px;
+
+		.card-img {
+			width: 100%;
+			height: 100%;
+			background: url(../../../img/product1_hover.png) no-repeat 0 -20px;
+			background-size: cover;
+			background-position: 50%;
+		}
+
+		a {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+		}
+
+		.card-price {
+			position: absolute;
+			bottom: 75px;
+			left: -10px;
+			margin-top: 0;
+			transform: rotate(270deg);
+			font-weight: bold;
+			font-size: 1.67rem;
+		}
+
+		.card-content {
+			position: absolute;
+			text-align: right;
+			right: 35px;
+			bottom: 0;
+		}
+
+		.card-brand {
+			font-size: 1.34rem;
+			margin-bottom: 0;
+		}
+
+		.card-title {
+			margin-top: 0;
+		}
+
+		&:not(:hover) .card-content,
+		&:not(:hover) a {
+		display: none;
+		}
+
+		&:hover img {
+			visibility: hidden;
+		}
+
+		&:hover {
+			border-bottom: 1px solid var(--global-color);
+			border-right: 1px solid var(--global-color);
+			box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+		}
+
+		@media screen and (max-width: 1200px) {
+			height: auto;
+		}
+	}

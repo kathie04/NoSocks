@@ -127,10 +127,10 @@
           <p>Crab Pattern Ankle Socks</p>
         </td>
         <td>
-          <div class="cart-product-value">
-            <button class="value-nav">-</button>
-            <input type="text" name="" value="1" class="cart-value">
-            <button class="value-nav">+</button>
+          <div class="quantity">
+            <button class="minus-btn" type="button" name="button">-</button>
+            <input type="text" name="name" value="1">
+            <button class="plus-btn" type="button" name="button">+</button>
           </div>
         </td>
         <td class="price">$1.50</td>
@@ -143,11 +143,11 @@
           <p>Colorblocked Crew Socks</p>
         </td>
         <td>
-          <div class="cart-product-value">
-            <button class="value-nav">-</button>
-            <input type="text" name="" value="1" class="cart-value">
-            <button class="value-nav">+</button>
-          </div>
+          <div class="quantity">
+            <button class="minus-btn" type="button" name="button">-</button>
+            <input type="text" name="name" value="1">
+            <button class="plus-btn" type="button" name="button">+</button>
+            </div>
         </td>
         <td class="price">$2.90</td>
         <td><a href=" "><svg class="icon icon-close"><use xlink:href="#icon-close"></use></svg></a></td>
@@ -206,10 +206,43 @@
       </div>  
     </div> 
     <div class="bottom-footer"> 
-      <p>Copyright  c  2015 Nosockstore All Rights Reserved </p>
+      <p>Copyright  &copy;  2015 Nosockstore All Rights Reserved </p>
     </div>  
     </div>
   </footer>
+  </script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('.minus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+ 
+    if (value > 1) {
+        value = value - 1;
+    } else {
+        value = 0;
+    }
+ 
+  $input.val(value);
+ 
+});
+ 
+$('.plus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+ 
+    if (value < 100) {
+        value = value + 1;
+    } else {
+        value =100;
+    }
+ 
+    $input.val(value);
+});
+</script>
 
 </body>
 

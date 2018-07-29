@@ -1,0 +1,81 @@
+.layout-prefooter {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #c7c7c7;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.right-prefooter {
+    display: flex;
+
+    a {
+        display: block;
+        font-weight: bold;
+    }
+
+    & > *:not(:last-child) {
+        margin-right: 60px;
+    }
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.form-prefooter {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    label {
+        margin-right: 60px;
+        font-weight: bold;
+    }
+
+    input::placeholder {
+         font-size: 0.78rem;
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        bottom: -12px;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.socials {
+    display: flex;
+    
+    & > *:not(:last-child) {
+        margin-right: 30px;
+
+        @media screen and (max-width: 1024px) {
+            margin-right: 10px;
+        }
+    }
+
+    a:hover svg{
+        color: var(--global-link-hover-color);
+    }
+}
+
+.bottom-footer {
+    color: #c7c7c7;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.layout-prefooter .layout-item:not(:last-child) {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+}

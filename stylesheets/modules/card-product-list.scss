@@ -1,0 +1,55 @@
+.card-overview-product.small {
+	padding-top: 25px;
+	height: auto;
+    
+    .card-img {
+     	background-image: none;
+    }
+
+    &:hover img {
+	    visibility: visible;
+    }
+
+    a {
+	    left: 85%;
+	    top: 30%;
+  		
+  		&:first-child {
+			top: 57%;
+		}
+	}
+
+	.card-price {
+		bottom: 45%;
+		font-size: 1.1rem;
+	}		
+
+	.card-brand {
+		position: absolute;
+		font-size: 1.1rem;
+		margin-top: 0;
+		top: 0;
+		left: 15px;
+	}
+
+	.card-title {
+		position: absolute;
+		margin-bottom: 0;
+		font-size: 0.74rem;
+		bottom: 20px;
+		left: 15px;
+	}
+
+	&:not(:hover) .card-title,
+	&:not(:hover) .card-brand,
+	&:not(:hover) a {
+		display: none;
+	}
+
+	&:hover {
+		border-bottom: 1px solid transparent;
+		border-right: 1px solid transparent;
+		box-shadow: none;
+	}
+}
+	
