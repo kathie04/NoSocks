@@ -16,3 +16,7 @@
   margin-right: -45px; }
   .logo:hover {
     color: #000; }
+  @media screen and (max-width: 768px) {
+    .logo {
+      margin-right: 0;
+      width: 50%; } }

@@ -64,3 +64,9 @@ svg[class*="icon-"].icon-triange {
 svg[class*="icon-"].icon-circle {
   font-size: 80px;
 }
+
+@media screen and (max-width: 768px) {
+  svg[class*=" icon-"].icon-logo {
+    margin-left: 0;
+  }
+}

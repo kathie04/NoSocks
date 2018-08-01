@@ -45,6 +45,8 @@
   .form-prefooter label {
     margin-right: 60px;
     font-weight: bold; }
+  .form-prefooter input {
+    padding-right: 30px; }
   .form-prefooter input::-webkit-input-placeholder {
     font-size: 0.78rem; }
   .form-prefooter input:-ms-input-placeholder {
