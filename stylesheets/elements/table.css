@@ -12,6 +12,10 @@ table p {
 	font-size: 1.34rem;
 }
 
+table td:nth-child(2) {
+	width: 35%;
+}
+
 @media screen and (max-width: 1024px) {
 	table {
 		display: block;
